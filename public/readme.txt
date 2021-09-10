@@ -1,0 +1,17 @@
+- This project was created with gulp
+- Instruments:
+    - ajax(throw http request)
+    - sass, pug, vue
+    - bem
+- This version is not adaptive, because I can't find it in terms of reference,
+    but it has media queries only screen and (max-width: 800px)
+- Using outputStyle: 'compressed' to reduse css code
+- Using pugConverter in gulpfile, that creates .min
+    - Browsersync for pug/sass
+- There are no "developments" which use different images -->
+    - image-adress contains only one image
+        - Instrument of downloading images was not created
+- I use id in ajax data to create empty forms
+    - First of all, it creates empty forms. After creating it keeps data by ajax
+- Before click on "see more" you can see only 12 developments on the page
+- Look at dependences in gulpfile

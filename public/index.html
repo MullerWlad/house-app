@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>House</title>
+    <link rel="stylesheet" href="./src/resource/mixins/font.css">
+    <link rel="stylesheet" href="./src/images/sprites/png/image.css">
+    <link rel="short icon" href="./src/images/sprites/png/asina.png">
+    <style>
+       html{overflow-x:hidden}p::selection{background:rgba(255,0,0,0.4);color:white}span::selection{background:rgba(255,0,0,0.4);color:white}body::-webkit-scrollbar{width:0}.white-block{background:#f2f2f2}.grey-block{background:#f8f8f8}.wave-block{background:#006F79}.orange-block{background:#EC6608}.green-text{color:#45852D}.white-text{color:white}.black-text{color:#363636}.display-vertical{display:flex;flex-direction:column;flex-wrap:wrap}.display-horison-between{display:flex;justify-content:space-between;flex-wrap:wrap;align-items:center}.display-vertical-between{display:flex;flex-direction:column;justify-content:space-between;flex-wrap:wrap;align-items:center}.display-horison-around{display:flex;justify-content:space-around;flex-wrap:wrap;align-items:center}.display-vertical-around{display:flex;flex-direction:column;justify-content:space-around;flex-wrap:wrap;align-items:center}.display-horison-center{display:flex;justify-content:center;flex-wrap:wrap;align-items:center}.display-vertical-center{display:flex;flex-direction:column;justify-content:center;flex-wrap:wrap;align-items:center}.display-prefix{display:flex;flex-direction:column-reverse;align-items:flex-end}.img-block{background-repeat:no-repeat;background-position:center center;background-size:cover}
+      body{padding:0;margin:0}.mask-block{min-width:100vw;min-height:100vh}.max-size-text{font-size:30px}.max-middle-text{font-size:20px}.min-middle-text{font-size:16px}.min-size-text{font-size:12px}.centred{margin:0 auto}.dev-object-block{width:379px;min-height:381px;background:#F8F8F8;border:1px solid #D8D8D8;cursor:pointer;transition-duration:0.5s;margin:5px}.dev-object-block:active{background:rgba(0,0,0,0.2)}.dev-panel{width:1250px;min-height:0px;margin-top:35px}@media screen and (max-width: 800px){.dev-panel{width:500px}}.prefix-block{width:200px;height:30px;margin:0;padding:0}
+      .heading-text{margin-top:49px;width:460px;height:50px;text-align:center}.input{width:418px;height:50px;border:1px solid #D8D8D8;box-sizing:border-box;border-radius:25px;text-decoration:none;outline:none;text-indent:20px;transition-duration:0.2s}@media screen and (max-width: 800px){.input{width:300px}}.input:focus{height:45px}.filter{width:480px;margin-top:50px;margin-left:150px}@media screen and (max-width: 800px){.filter{margin:0 auto;width:362px}}.button{width:150px;height:50px;border:1px solid #D8D8D8;box-sizing:border-box;border-radius:25px;text-align:center;user-select:none;margin-top:20px;margin-bottom:50px;cursor:pointer;transition-duration:0.5s}.button:hover{background:rgba(0,0,0,0.1)}.button:active{background:rgba(0,0,0,0.3)}.dev-text{padding:0;margin:0;margin-left:20px;margin-top:7px}
+
+    </style>
+  </head>
+  <body> 
+    <div class="mask-block display-vertical">
+      <p class="green-text bold-text max-size-text centred heading-text">Our Latest Developments</p>
+      <div class="display-horison-between filter">
+        <p class="black-text bold-text min-size-text">Filter</p>
+        <input class="input min-middle-text regular-text" type="text">
+      </div>
+      <div class="display-horison-around dev-panel centred" id="app"></div>
+      <p class="button black-text min-size-text bold-text centred display-vertical-center" onclick="alert(&quot;more developments...&quot;)">See more &#8250</p>
+    </div>
+    <script src="./src/js/search.js"></script>
+  </body>
+</html>

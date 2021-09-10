@@ -1,0 +1,11 @@
+.default-dev-picture{
+    background-image: url(./default.png);
+    width: 379px;
+    height: 233px;
+}
+
+.empty-picture {
+    background-image: url(./empty.png);
+    width: 70px;
+    height: 70px;
+}

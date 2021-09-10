@@ -1,0 +1,21 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset="utf-8")
+        title House
+        link(rel="stylesheet" href="./src/resource/mixins/font.css")
+        link(rel="stylesheet" href="./src/images/sprites/png/image.css")
+        link(rel="short icon" href="./src/images/sprites/png/asina.png")
+        style 
+            include src/css/fixed-properties.min.css
+            include src/css/general-style.min.css
+            include src/css/special-style.min.css
+    body 
+        .mask-block.display-vertical
+            p.green-text.bold-text.max-size-text.centred.heading-text Our Latest Developments
+            .display-horison-between.filter
+                p.black-text.bold-text.min-size-text Filter
+                input.input.min-middle-text.regular-text(type="text")
+            #app.display-horison-around.dev-panel.centred
+            p.button.black-text.min-size-text.bold-text.centred.display-vertical-center(onclick='alert("more developments...")') See more &#8250
+        script(src="./src/js/search.js")
